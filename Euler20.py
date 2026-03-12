@@ -12,18 +12,23 @@ def factorial(n: int) -> int:
     
     F[n] = val
     return val
+    
+def sum_fact_digits(n: int) -> int:
+    sfn = str(factorial(n))
+    val = 0
+    for si in sfn:
+        val += int(si)
+    return val
 
 def main() -> int:
     
+    assert sum_fact_digits(10) == 27
+    
     start = perf_counter()
     
-    N = 100
-    sfN = str(factorial(N))
-    
-    ans = 0
-    for si in sfN:
-        ans += int(si)
-        
+    N = 100  
+    ans = sum_fact_digits(N)
+ 
     end = perf_counter()
 
     print(ans)
