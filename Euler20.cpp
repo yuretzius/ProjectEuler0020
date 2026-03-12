@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cassert>
 #include <chrono>
 using namespace std;
 
@@ -117,7 +118,10 @@ int main() {
         }
     }
     auto end = chrono::high_resolution_clock::now();
+    assert (summa[10] == 27);
+    cout << "Input a number from 0 to 1000:"<< endl;
     cin >> N;
+    cout << "The sum of digits of its factorial is:" << endl;
     cout << summa[N] << endl;
     cout << endl;
     cout << chrono::duration<double, milli>(end - start).count() << " ms\n";
