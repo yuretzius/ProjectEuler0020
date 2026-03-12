@@ -17,6 +17,5 @@ Find the sum of the digits in the number $100!$.
 > [!NOTE]
 > Project Euler's policy allows publication of solutions for the first 100 problems, that's why I am sharing my work here for reference and educational purposes.
 
-
-
+Nothing much to tell about the python version. Directly compute the factorial, using recursion and python's native (big) ints. Convert the result to a string, cycle through it digit by digit and add them up. $N = 100$ takes $96\mu\text{s}$, 
 
