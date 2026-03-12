@@ -17,7 +17,7 @@ def main() -> int:
     
     start = perf_counter()
     
-    N = 1000
+    N = 100
     sfN = str(factorial(N))
     
     ans = 0
